@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>双体通讯录</title>
+    <link href="css/jquery.fullPage.css" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet">
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/jquery.fullPage.min.js"></script>
+</head>
+<body>
+    <div id="fullpage">
+
+        <div class="section page1">
+            <div class="page1-con">
+                <h1>App介绍</h1>
+                <p>双体通讯录是一个服务于各位双体学子的信息查询类APP，其中包含了当期所有双体学员的联系方式，方便大家查询联系。</p>
+            </div>
+        </div>
+
+        <div class="section page2">
+                <ul class="page2-con">
+                    <li class="page2-con-1">
+                        <h2>[安全]</h2>
+                        <p>只有学员方可登陆并获取通讯录信息</p>
+                    </li>
+                    <li class="page2-con-2">
+                        <h2>[方便]</h2>
+                        <p>手机查询当期学员花名册，包含详细的联系方式和工作信息</p>
+                    </li>
+                    <li class="page2-con-3">
+                        <h2>[管理]</h2>
+                        <p>管理员可以在后台管理花名册，维护通讯录，保持信息最新最全</p>
+                    </li>
+                </ul>
+        </div>
+        <div class="section page3">
+            <div class="page3-con">
+                <h2>想要女神的联系方式么？</h2><h2>想要欧巴男神的秋秋么？</h2><h2>还等什么?</h2><h2>赶快下载吧！</h2>
+            </div>
+        </div>
+        <div class="section page4">
+            <div class="page4-con">
+                <h2>如果喜欢，那就下载吧</h2>
+                <button class="button" >下载</button>
+                <button class="button" >下载</button>
+            </div>
+        </div>
+    </div>
+<script>
+    $(function(){
+        $("#fullpage").fullpage({
+            anchors:["page1","page2","page3","page4","page5"],
+            "navigation":"true",
+            verticalCentered:false
+
+        });
+    })
+</script>
+</body>
+</html>
